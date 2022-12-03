@@ -16,15 +16,20 @@
 // And https://docs.joinmastodon.org/spec/webfinger/
 
 // Test cases:
-// https://seifried.org/.well-known/webfinger?resource=acct:kurt@seifried.org
-// https://seifried.org/.well-known/webfinger?resource=acct:kurt@seifried.org2
+// https://tedt.org/.well-known/webfinger?resource=acct:ted@tedt.org
+// https://tedt.org/.well-known/webfinger?resource=acct:ted@tedt.org
 
-// TODO: deployment via wrangler bits
+// TODO: Put in other WebFinger variables and request URLs
 
 const redirectMap = new Map([
-  ['kurt@seifried.org', '@kurtseifried@mastodon.social'],
-  ['test@seifried.org', '@test@tld'],
+  ['ted@tedt.org', '@tedt@twit.social'],
+  ['tedt@tedt.org', '@tedt@twit.social'],
+  ['ted@tschopp.org', '@tedt@twit.social'],
+  ['ted@tschopp.net', '@tedt@twit.social'],
+  ['ted@tedt.org', '@tedt@twit.social'],
+  ['test@tedt.org', '@test@tld'],
 ]);
+
 
 async function handleRequest(request) {
   const requestURL = new URL(request.url);
