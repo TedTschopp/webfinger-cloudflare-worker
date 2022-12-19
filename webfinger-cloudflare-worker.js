@@ -11,13 +11,12 @@
                                                                                                                                        
 // Based off of https://developers.cloudflare.com/workers/examples/bulk-redirects/
 // Based off of https://developers.cloudflare.com/workers/examples/return-json/
-// and whatever the third(?) google result for "cloudflare worker query string" was
 // Also thanks to https://jsoneditoronline.org/, cut and paste your webfinger json in and hit the minify button to get a string
 // And https://docs.joinmastodon.org/spec/webfinger/
 
 // Test cases:
 // https://tedt.org/.well-known/webfinger?resource=acct:ted@tedt.org
-// https://tedt.org/.well-known/webfinger?resource=acct:ted@tedt.org
+// https://tedt.org/.well-known/webfinger?resource=acct:ted@tedt2.org
 
 // TODO: Put in other WebFinger variables and request URLs
 
